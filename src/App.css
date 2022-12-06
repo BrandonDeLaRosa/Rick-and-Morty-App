@@ -1,0 +1,801 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  background-color: black;
+  /* padding-top: 4rem; */
+}
+
+/* ------------------------------------------- Header ------------------------------------------------------------------- */
+.header{
+  background-color: rgb(0, 0, 0);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(./assets/headerPhone.webp);
+  padding: 1rem;
+}
+
+.menuBtn{
+  border: 1px solid black;
+  /* border-radius: 100%; */
+}
+
+.iconImg{
+  height: 90px;
+}
+
+.menuBtn:hover{
+ transition: 0.5s;
+ transform: scale(1.1);
+ box-shadow: 0px 0px 5px 3px white;
+ /* border-radius: 100%; */
+}
+
+.menu{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* transition: all 10s ease-out; */
+}
+
+.link{
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.link:hover{
+  color: orange;
+  transition: .5s;
+  transform: scale(1.2);
+}
+/* 
+.link:visited{
+  color: cyan;
+
+} */
+
+.link:active{
+  color: yellowgreen;
+  transition: .5s;
+}
+
+
+/* ----------------------------------------------- HOME  -------------------------------------------------- */
+
+.home{
+  background-image: url(./assets/backgroundRick.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 250px;
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; 
+  /* max-width: 329px; */
+}
+
+.links{
+  /* background-color: wheat; */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -15rem;
+  height: 200px;
+  align-items: center;
+}
+
+.welcome{
+  color: greenyellow;
+  margin: 2rem 0rem;
+  font-size:35px ;
+  font-weight: bolder;
+  box-shadow: 0px 0px 5px 3px white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+/* ----------------------------------------------- All Locations ---------------------------------------------- */
+
+.locationsContainer{
+  background-image: url(./assets/0eca078ba47605cf5022e49ab462308a.png);
+  /* background-image: url(./assets/portalPhone.jpg); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 250px;
+  background-color: black;
+  /* height: 130vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+
+.byNameBtn{
+  background-color: yellowgreen;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.byNameBtn:hover{
+  border: 1px solid white;
+  box-shadow: 0px 0px 10px 3px orange;
+  transition: .4s;
+  transform: scale(1.1)
+}
+
+.byNameBtn:visited{
+  color: white;
+  transition: .4s;
+}
+
+.inputList{
+  color: black;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.linkList{
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.linkList:hover{
+  color: orange;
+  transition: .5s;
+  transform: scale(1.2);
+}
+
+.linkList1{
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.linkList1:hover{
+  color: orange;
+  /* transition: .5s; */
+  transform: scale(1.1);
+}
+
+/* .linkList1:visited{
+  color: cyan;
+
+} */
+
+.linkList:active{
+  color: yellowgreen;
+}
+
+.listList{
+  background-color: rgba(35, 48, 222, 0.028);
+  width: 100%;
+}
+
+.listBtnContainer{
+  /* background-color: aliceblue; */
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageNum{
+  color: white;
+}
+
+.listBtns{
+  background-color: yellowgreen;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0rem;
+  border: none;
+}
+
+.listBtns:hover{
+  border: 1px solid white;
+  box-shadow: 0px 0px 10px 3px orange;
+  transform: scale(1.1);
+}
+
+.byIdBtn{
+  background-color: yellowgreen;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 0.5rem;
+  margin-top: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.byIdBtn:hover{
+  border: 1px solid white;
+  box-shadow: 0px 0px 10px 3px orange;
+  transition: .4s;
+  transform: scale(1.1)
+}
+
+.searchResult{
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.searchResult:Hover{
+  color: orange;
+  transform: scale(1.1);
+}
+
+
+/*  ------------------------------------------------------------ Location Info ------------------------------------------------------------------- */
+
+.locationInfo{
+  background-size:95px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.locationText{
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.residentsBtns{
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.pagesBtns{
+  background-color: yellowgreen;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 0.5rem;
+  border: none;
+  padding: .5rem;
+}
+.pagesBtns:hover{
+  border: 1px solid white;
+  box-shadow: 0px 0px 10px 3px orange;
+}
+
+.pagesBtn{
+  background-color: white;
+  border-radius: 100%;
+  padding: .4rem;
+  border: none;
+  font-weight: bold;
+  font-size: 10px;
+  margin: 0rem .1rem;
+}
+
+.pagesBtn:hover{
+  border: 1px solid white;
+  box-shadow: 0px 0px 10px 3px orange;
+}
+
+/*  ------------------------------------------------------------- Residents Cards---------------------------- */
+
+.residentCard{
+  /* border: 2px solid rgb(255, 119, 0); */
+  margin: 1rem 0rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem;
+  /* width: 200px;
+  height: 200px; */
+}
+
+.residentCard:hover{
+  border: 1px solid white ;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px 1px rgb(0, 187, 255);
+  transition: .5s;
+  transform: scale(1.1)
+}
+
+.cardImg{
+  border-radius: 10%;
+   width: 200px;
+  height: 200px;
+}
+
+.cardName{
+  margin-top: 1rem;
+  color: white;
+}
+
+.cardName:hover{
+  color: orange;
+  
+}
+
+/* --------------------------------------------- Characters LisT  */
+
+.charactersContainer{
+  background-color: aqua;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputListCharacter{
+  /* background-color: aqua; */
+  color: black;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.charactersList{
+  /* background-color: aqua; */
+  text-align: center;
+  color: white;
+  /* text-decoration: none; */
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.charactersImg{
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+
+.charactersImg:hover{
+  transition: .4s;
+  transform: scale(1.2);
+}
+
+.characterName{
+  color: white;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.characterName:hover{
+  color: orange;
+}
+
+.lideco{
+  text-decoration: none;
+}
+
+/* .lideco:hover{
+  border: 1px solid white ;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px 1px rgb(0, 187, 255);
+  transition: .5s;
+  transform: scale(1.1)
+} */
+/* ----------------------------------------------- Character info ---- */
+
+.characterInfoContainer{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+
+}
+
+.characterInfoImg{
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.characterInfoImg:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px 1px rgb(0, 183, 255);
+}
+
+.characterInfoName{
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+
+.title{
+  color: orange;
+}
+
+.titleContainer{
+  margin-bottom: 1rem;
+}
+
+
+/*  ================================== RESPONSIVIDAD =========== */
+/*  ================================= tablet Width ============= */
+
+@media screen and (min-width: 810px) and (max-width: 1024px) { 
+
+  
+  .menuBtn:hover{
+   transition: 0.5s;
+   transform: scale(1.1);
+   box-shadow: 0px 0px 5px 3px white;
+   /* border-radius: 100%; */
+  }
+  
+  .menu{
+    height: 110vh;
+  }
+
+  .link{
+    font-size: 40px;
+  }
+
+  /* ----------------------------------------------- HOME  -------------------------------------------------- */
+  .welcome{
+    margin: 1rem 0rem 3rem 0rem;
+    font-size:45px ;
+    box-shadow: 0px 0px 15px 3px white;
+  }
+  
+  /* ----------------------------------------------- All Locations ---------------------------------------------- */
+  
+  .locationsContainer{
+    background-size: 350px;
+  }
+  
+  .byNameBtn{
+    font-size: 30px;
+  }
+
+  .inputList{
+    font-size: 30px;
+  }
+  
+  .linkList1{
+    font-size: 27px;
+  }
+  
+  .listList{
+    background-color: rgba(35, 48, 222, 0);
+  }
+  
+  .listBtnContainer{
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .pageNum{
+    font-size: 30px;
+  }
+  
+  .listBtns{
+    font-size: 25px;
+    border: none;
+  }
+  
+  
+  .byIdBtn{
+    font-size: 25px;
+    border: none;
+  }
+  
+  .searchResult{
+    font-size: 30px;
+  }
+  
+  .searchResult:Hover{
+    color: orange;
+    transform: scale(1.1);
+  }
+  
+
+  /*  ------------------------------------------------------------ Location Info ------------------------------------------------------------------- */
+  .locationText{
+    font-size: 15px;
+    display: flex;
+    padding: 0rem 1rem;
+  }
+
+  .cardsF{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+    .residentCard {
+      width: 250px;
+      height: 265px;
+    }
+  
+    .titleFlex {
+      display: flex;
+      flex-direction: column;
+      /* border: 1px solid white; */
+      margin: 1rem 1rem;
+      padding: 1rem;
+    }
+  
+    .pagesBtns {
+      font-size: 20px;
+    }
+  
+    .pagesBtn {
+      font-size: 15px;
+      margin: 0rem .4rem;
+    }
+
+  /* --------------------------------------------- Characters LisT  */
+  .inputListCharacter{
+    font-size: 22px;
+    margin: 1rem 0rem 2rem;
+  }
+  
+  .charactersList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .lideco{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin: 0.5rem;
+    width:180px ;
+    height: 180px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lideco:hover{
+    border: 1px solid white ;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px 1px rgb(0, 187, 255);
+    transition: .5s;
+    transform: scale(1.1)
+  }
+  /* ----------------------------------------------- Character info ---- */
+  
+  .characterBody{
+    display: flex;
+    gap: 5rem;
+  }
+  .characterInfoImg{
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .characterInfoImg:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 1px rgb(0, 183, 255);
+  }
+  
+  .characterInfoName{
+    font-weight: bolder;
+    margin-bottom: 1rem;
+  }
+  
+  .titleContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0rem;
+    font-size: 25px;
+  }
+   
+}
+/* ============================================================== RESPONSIVIDAD  LARGE============================================== */
+
+@media screen and (min-width: 1024px) { 
+ 
+  .menuBtn:hover{
+   transition: 0.5s;
+   transform: scale(1.1);
+   box-shadow: 0px 0px 5px 3px white;
+   /* border-radius: 100%; */
+  }
+  
+  .menu{
+    height: 110vh;
+  }
+
+  .link{
+    font-size: 40px;
+  }
+
+  /* ----------------------------------------------- HOME  -------------------------------------------------- */
+  .welcome{
+    margin: 1rem 0rem 4rem 0rem;
+    font-size:60px ;
+    box-shadow: 0px 0px 15px 3px white;
+  }
+  
+  /* ----------------------------------------------- All Locations ---------------------------------------------- */
+  
+  .locationsContainer{
+    background-size: 450px;
+    margin-left: 5rem;
+  }
+  
+  .byNameBtn{
+    font-size: 35px;
+    padding: 1rem;
+  }
+
+  .inputList{
+    font-size: 30px;
+  }
+  
+  .linkList{
+    font-size: 27px;
+  }
+
+  .linkList1{
+    font-size: 27px;
+  }
+  
+  .listBtnContainer{
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+  
+  .pageNum{
+    font-size: 35px;
+  }
+  
+  .listBtns{
+    font-size: 30px;
+    border: none;
+  }
+  
+  
+  .byIdBtn{
+    font-size: 30px;
+    border: none;
+  }
+  
+  .searchResult{
+    font-size: 40px;
+  }
+  
+  .searchResult:Hover{
+    color: orange;
+    transform: scale(1.1);
+  }
+  
+  /*  ------------------------------------------------------------ Location Info ------------------------------------------------------------------- */
+  .locationText{
+    font-size: 20px;
+    display: flex;
+  }
+
+  .cardsF{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .residentCard{
+    width: 250px;
+    height: 265px;
+  }
+
+  .titleFlex{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem;
+    padding: 0rem .5rem;
+  }
+
+.pagesBtns{
+  font-size: 20px;
+}
+
+.pagesBtn{
+  padding: .5rem;
+  font-size: 15px;
+  margin: 0rem .6rem;
+}
+
+  /* --------------------------------------------- Characters LisT  */
+  .inputListCharacter{
+    font-size: 22px;
+    margin: 1rem 0rem 2rem;
+  }
+  
+  .charactersList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .lideco{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin: 0.5rem;
+    width:180px ;
+    height: 180px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lideco:hover{
+    border: 1px solid white ;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px 1px rgb(0, 187, 255);
+    transition: .5s;
+    transform: scale(1.1)
+  }
+  /* ----------------------------------------------- Character info ---- */
+  
+  .characterBody{
+    display: flex;
+    gap: 7rem;
+  }
+  .characterInfoImg{
+    width: 400px;
+    height: 400px;
+    border-radius: 0.5rem;
+    margin-bottom: 0rem;
+  }
+  
+  .characterInfoImg:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 1px rgb(0, 183, 255);
+  }
+  
+  .characterInfoName{
+    font-weight: bolder;
+    margin-bottom: 1rem;
+  }
+  
+  .titleContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0rem;
+    font-size: 30px;
+  }
+}
+
