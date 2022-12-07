@@ -25,7 +25,8 @@
 }
 
 .iconImg{
-  height: 90px;
+  height: 20px;
+  background-color: black;
 }
 
 .menuBtn:hover{

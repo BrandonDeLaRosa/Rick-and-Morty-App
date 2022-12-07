@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import menu from '../assets/backGroundRick.jpg'
+import menu from '../assets/menu.png'
 
 const Header = () => {
     const randomNum = Math.ceil(Math.random() * 126)
@@ -11,7 +11,7 @@ const Header = () => {
         <div className='header'>
             <button className='menuBtn' onClick={() => setIsVisible(!isVisible)}>
                 <img className='iconImg'
-                    style={{ height: "90px", }}
+                    // style={{ height: "40px", }}
                     src={menu} alt="menuIcon"
                 />
             </button><br />
